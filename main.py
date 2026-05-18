@@ -24,7 +24,7 @@ except ImportError:
 ROOT = Path(__file__).resolve().parent
 IS_BROWSER_RUNTIME = sys.platform == "emscripten"
 JSON_DIR = ROOT / "data" / "json"
-EEZ_PATH = ROOT / "data" / "eez_v12.gpkg"
+EEZ_PATH = ROOT / "data" / "eez_v12_pacific.gpkg"
 GEOBOUNDARIES_API = "https://www.geoboundaries.org/api/current/gbOpen/{iso3}/ADM0/"
 PACIFIC_VIEW = pdk.ViewState(latitude=-8, longitude=178, zoom=2.15, pitch=0) if pdk is not None else None
 
@@ -1317,7 +1317,7 @@ with spatial_tab:
                 if source_summary:
                     caption_parts.append(f"Spatial source: {source_summary}.")
                 if show_eez:
-                    caption_parts.append("EEZ source: local geopackage in data/eez_v12.gpkg.")
+                    caption_parts.append("EEZ source: local geopackage in data/eez_v12_pacific.gpkg.")
                 st.caption(" ".join(caption_parts))
                 st.dataframe(
                     top_waters.assign(value=lambda dataframe: dataframe["value"].map(lambda value: format_value(value, map_unit))),
