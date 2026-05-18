@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>FFA Economic Intelligence Prototype</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@stlite/browser@1.7.3/build/stlite.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@stlite/browser@1.7.3/build/stlite.js"></script>
+</head>
+
+<body>
+    <streamlit-app src="./main.py">
+        
+        <app-file name="data/json/compendium_a_catch_and_catch_value.json" url="./data/json/compendium_a_catch_and_catch_value.json"></app-file>
+        <app-file name="data/json/compendium_b_prices.json" url="./data/json/compendium_b_prices.json"></app-file>
+        <app-file name="data/json/compendium_c_country_level_data.json" url="./data/json/compendium_c_country_level_data.json"></app-file>
+        <app-file name="data/json/compendium_contents.json" url="./data/json/compendium_contents.json"></app-file>
+        <app-file name="data/json/tuna_10_value_catch_nat_wat.json" url="./data/json/tuna_10_value_catch_nat_wat.json"></app-file>
+        <app-file name="data/json/tuna_11_value_catch_by_fleet.json" url="./data/json/tuna_11_value_catch_by_fleet.json"></app-file>
+        <app-file name="data/json/tuna_12_val_fl_cat_nat_wat_ffa_me_.json" url="./data/json/tuna_12_val_fl_cat_nat_wat_ffa_me_.json"></app-file>
+        <app-file name="data/json/tuna_13_value_fl_catch_own_waters.json" url="./data/json/tuna_13_value_fl_catch_own_waters.json"></app-file>
+        <app-file name="data/json/tuna_1_contents.json" url="./data/json/tuna_1_contents.json"></app-file>
+        <app-file name="data/json/tuna_2_intoduction_.json" url="./data/json/tuna_2_intoduction_.json"></app-file>
+        <app-file name="data/json/tuna_3_prices.json" url="./data/json/tuna_3_prices.json"></app-file>
+        <app-file name="data/json/tuna_4_summary_of_catch.json" url="./data/json/tuna_4_summary_of_catch.json"></app-file>
+        <app-file name="data/json/tuna_5_summary_of_catch_value.json" url="./data/json/tuna_5_summary_of_catch_value.json"></app-file>
+        <app-file name="data/json/tuna_6_catch_by_national_waters.json" url="./data/json/tuna_6_catch_by_national_waters.json"></app-file>
+        <app-file name="data/json/tuna_7_catch_by_fleet.json" url="./data/json/tuna_7_catch_by_fleet.json"></app-file>
+        <app-file name="data/json/tuna_8_fl_cat_nat_wat_ffa_members_.json" url="./data/json/tuna_8_fl_cat_nat_wat_ffa_members_.json"></app-file>
+        <app-file name="data/json/tuna_9_fl_cat_own_nat_wat.json" url="./data/json/tuna_9_fl_cat_own_nat_wat.json"></app-file>
+        <app-file name="data/eez_v12.gpkg" url="./data/eez_v12.gpkg"></app-file>
+        <app-file name=".streamlit/config.toml" url="./.streamlit/config.toml"></app-file>
+        <app-file name="ffa.png" url="./ffa.png"></app-file>
+        <app-requirements>
+            pandas
+            altair
+            requests
+        </app-requirements>
+        
+    </streamlit-app>
+</body>
+
+</html>
