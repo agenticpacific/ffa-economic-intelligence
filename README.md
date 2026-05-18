@@ -2,3 +2,4 @@
 
 ### ECONOMIC AND DEVELOPMENT INDICATORS AND STATISTICS for TUNA FISHERIES OF THE WESTERN AND CENTRAL PACIFIC OCEAN
 
+https://agenticpacific.com.fj/ffa-economic-intelligence/
