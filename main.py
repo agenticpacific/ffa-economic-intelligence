@@ -1144,7 +1144,7 @@ with overview_tab:
     col5, col6 = st.columns(2)
     with col5:
         with st.container(border=True):
-            st.subheader(f"Top FFA national waters, {end_year}")
+            st.subheader(f"Top FFA EEZ Waters, {end_year}")
             render_rank_chart(top_waters, "country", map_metric, map_value_format)
     with col6:
         with st.container(border=True):
@@ -1229,8 +1229,9 @@ with country_tab:
 
 with spatial_tab:
     with st.container(border=True):
-        st.subheader(f"Pacific national waters context, {end_year}")
-        if IS_BROWSER_RUNTIME:
+        st.subheader(f"Pacific EEZ Water Context, {end_year}")
+        #disable_map = False
+        if  IS_BROWSER_RUNTIME:
             st.info(
                 "The browser build uses a lightweight spatial fallback so the packaged app can finish loading. "
                 "Open the local Streamlit app for the full interactive map.",
