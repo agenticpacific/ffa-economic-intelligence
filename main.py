@@ -1053,7 +1053,7 @@ st.markdown(
     <div class="hero-meta">
         <div>
             <span>Datasets in use</span>
-            <strong>{len(JSON_DATASET_FILES)} JSON datasets</strong>
+            <strong>{len(JSON_DATASET_FILES)} PostgreSQL/Feather Datasets</strong>
         </div>
         <div>
             <span>Time coverage</span>
